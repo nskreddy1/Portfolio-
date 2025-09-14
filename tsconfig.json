@@ -13,12 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",          // ✅ this is the key for .tsx files
+
+    "jsx": "react-jsx",          
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"]
-    }
+    },
+    "types": ["node"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
