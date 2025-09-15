@@ -79,16 +79,29 @@ export default function Navigation() {
           </div>
 
           <div className="flex items-center space-x-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={downloadResume}
-              className="hidden sm:flex"
-              data-testid="button-download-resume"
-            >
-              <Download className="h-4 w-4 mr-2" />
-              Resume
-            </Button>
+            {/* Resume button (desktop) */}
+<Button
+  variant="outline"
+  size="sm"
+  onClick={downloadResume}
+  className="hidden sm:flex"
+  data-testid="button-download-resume"
+>
+  <Download className="h-4 w-4 mr-2" />
+  Resume
+</Button>
+
+{/* Resume icon (mobile) */}
+<Button
+  variant="ghost"
+  size="icon"
+  onClick={downloadResume}
+  className="flex sm:hidden"
+  data-testid="button-download-resume-mobile"
+>
+  <Download className="h-4 w-4" />
+</Button>
+
             
             <Button
               variant="ghost"
