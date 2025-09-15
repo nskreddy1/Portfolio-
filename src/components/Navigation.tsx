@@ -46,7 +46,7 @@ export default function Navigation() {
     console.log("Download resume triggered");
     //todo: remove mock functionality - implement actual PDF download
     const link = document.createElement("a");
-    link.href = "/attached_assets/sunil_N_1757870222089.pdf";
+    link.href = "/assets/sunil.pdf";
     link.download = "Sunil_Kumar_Resume.pdf";
     link.click();
   };
